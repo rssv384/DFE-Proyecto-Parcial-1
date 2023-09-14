@@ -1,0 +1,166 @@
+:root {
+	--title-font: 'EB Garamond', serif;
+	--body-font: 'Gill Sans', sans-serif;
+	--font-size: 18px;
+
+	--title-font-weight-normal: 400;
+	--title-font-weight-bold: 700;
+	--body-font-weight-normal: 400;
+	--body-font-weight-bold: 700;
+
+	--background-color: #2c3333;
+
+	--primary-color: #395b64;
+	--secondary-color: #a5c9ca;
+	--tertiary-color: #e7f6f2;
+
+	--shadow-color: hsla(0, 0%, 0%, 0.3);
+
+	--header-height: 70px;
+	--nav-height: 60px;
+}
+
+/* #region BASE */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: var(--background-color);
+	font-size: var(--font-size);
+}
+/* #endregion */
+
+/* #region FLEX STYLES */
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-content-space-between {
+	justify-content: space-between;
+}
+
+.flex-content-center {
+	justify-content: center;
+}
+
+.flex-align-items-center {
+	align-items: center;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-right {
+	text-align: right;
+}
+/* #endregion */
+
+/* #region TEXT STYLES */
+h1,
+h2,
+h3 {
+	font-family: var(--title-font);
+	margin: 10px 0px;
+	color: var(--secondary-color);
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: var(--title-font-weight-bold);
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: var(--title-font-weight-bold);
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: var(--title-font-weight-normal);
+}
+
+p {
+	font-family: var(--body-font);
+	font-weight: var(--body-font-weight-normal);
+	color: var(--tertiary-color);
+}
+/* #endregion */
+
+/* #region HEADER */
+/* HEADER */
+header {
+	z-index: 1;
+
+	position: fixed;
+	width: 100%;
+	height: var(--header-height);
+
+	background: var(--primary-color);
+	box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--tertiary-color);
+}
+
+nav li:hover {
+	background-color: var(--background-color);
+	border-radius: 10px;
+}
+/* #endregion */
+
+/* #region MAIN */
+main {
+	padding-top: 80px;
+}
+
+main hr {
+	border-top: 7px solid var(--tertiary-color);
+	width: 3rem;
+	margin: 0 auto;
+}
+/* #endregion */
+
+/* #region SECTIONS */
+section {
+	display: block;
+	/* Section height = Viewport height - header height */
+	height: calc(100vh - var(--header-height));
+
+	scroll-margin-top: 80px;
+	padding: 50px 80px;
+}
+
+section:not(#home) {
+	height: fit-content;
+}
+/* #endregion */
+
+/* #region FOOTER */
+footer {
+	height: fit-content;
+	padding: 25px 50px;
+	background-color: var(--primary-color);
+}
+/* #endregion */
