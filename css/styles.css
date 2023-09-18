@@ -62,6 +62,10 @@ body {
 .flex-align-items-start {
 	align-items: flex-start;
 }
+
+.column {
+	width: 40%;
+}
 /* #endregion */
 
 /* #region TEXT STYLES */
@@ -189,17 +193,12 @@ section:not(#home) {
 /* #endregion */
 
 /* #region ACERCA-DE-MI */
-.biografia {
-	width: 575px;
+#biografia,
+#info-personal {
 	gap: 1rem;
 }
 
-.info-personal {
-	width: 500px;
-	gap: 1rem;
-}
-
-.info-personal hr {
+#info-personal hr {
 	border-top: 1px solid var(--tertiary-color);
 }
 
@@ -208,21 +207,21 @@ section:not(#home) {
 }
 
 .info-personal-fila > h3,
-p,
-ul {
+.info-personal-fila > p,
+.info-personal-fila > ul {
 	margin-top: auto;
 	margin-bottom: auto;
 }
 
 .info-personal-fila > h3 {
-	width: 125px;
+	width: 20%;
 }
 
 .info-personal-fila > p {
-	width: 350px;
+	width: 70%;
 }
 
-.info-personal-fila ul {
+.info-personal-fila > ul {
 	list-style: circle;
 	font-family: var(--body-font);
 	color: var(--tertiary-color);
