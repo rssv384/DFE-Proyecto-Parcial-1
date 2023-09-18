@@ -59,12 +59,8 @@ body {
 	align-items: center;
 }
 
-.text-align-center {
-	text-align: center;
-}
-
-.text-align-right {
-	text-align: right;
+.flex-align-items-start {
+	align-items: flex-start;
 }
 /* #endregion */
 
@@ -97,6 +93,14 @@ p {
 	font-family: var(--body-font);
 	font-weight: var(--body-font-weight-normal);
 	color: var(--tertiary-color);
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-right {
+	text-align: right;
 }
 /* #endregion */
 
@@ -137,7 +141,7 @@ main {
 	padding-top: var(--header-height);
 }
 
-main hr {
+main > hr {
 	border-top: 7px solid var(--tertiary-color);
 	width: 3rem;
 	margin: 0 auto;
@@ -180,6 +184,47 @@ section:not(#home) {
 }
 
 #home b {
+	color: var(--tertiary-color);
+}
+/* #endregion */
+
+/* #region ACERCA-DE-MI */
+.biografia {
+	width: 575px;
+	gap: 1rem;
+}
+
+.info-personal {
+	width: 500px;
+	gap: 1rem;
+}
+
+.info-personal hr {
+	border-top: 1px solid var(--tertiary-color);
+}
+
+.info-personal-fila {
+	gap: 2rem;
+}
+
+.info-personal-fila > h3,
+p,
+ul {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.info-personal-fila > h3 {
+	width: 125px;
+}
+
+.info-personal-fila > p {
+	width: 350px;
+}
+
+.info-personal-fila ul {
+	list-style: circle;
+	font-family: var(--body-font);
 	color: var(--tertiary-color);
 }
 /* #endregion */
