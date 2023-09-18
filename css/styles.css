@@ -164,6 +164,17 @@ section {
 section:not(#home) {
 	height: fit-content;
 }
+
+section ul {
+	list-style: circle;
+	font-family: var(--body-font);
+	color: var(--tertiary-color);
+	margin-left: 1rem;
+}
+
+section li {
+	margin: 1rem 0rem;
+}
 /* #endregion */
 
 /* #region HOME */
@@ -198,6 +209,11 @@ section:not(#home) {
 	gap: 1rem;
 }
 
+#biografia {
+	position: relative;
+	top: 10px;
+}
+
 #info-personal hr {
 	border-top: 1px solid var(--tertiary-color);
 }
@@ -219,12 +235,6 @@ section:not(#home) {
 
 .info-personal-fila > p {
 	width: 70%;
-}
-
-.info-personal-fila > ul {
-	list-style: circle;
-	font-family: var(--body-font);
-	color: var(--tertiary-color);
 }
 /* #endregion */
 
