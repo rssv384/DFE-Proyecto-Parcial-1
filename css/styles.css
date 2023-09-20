@@ -244,4 +244,27 @@ footer {
 	padding: 25px 50px;
 	background-color: var(--primary-color);
 }
+
+footer hr {
+	border-top: 1px solid var(--tertiary-color);
+	margin: 1rem 10rem;
+}
+
+#redes-sociales {
+	gap: 1rem 2rem;
+}
+
+.fa-brands {
+	/* width: 45px; */
+	color: var(--tertiary-color);
+	cursor: pointer;
+}
+
+.fa-brands:hover {
+	color: var(--primary-color-dark);
+}
+
+.fa-brands:active {
+	color: var(--secondary-color);
+}
 /* #endregion */
