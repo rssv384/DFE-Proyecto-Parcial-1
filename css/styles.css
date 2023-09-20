@@ -175,6 +175,10 @@ section ul {
 section li {
 	margin: 1rem 0rem;
 }
+
+section hr {
+	border: 1px solid var(--tertiary-color);
+}
 /* #endregion */
 
 /* #region HOME */
@@ -214,10 +218,6 @@ section li {
 	top: 10px;
 }
 
-#info-personal hr {
-	border-top: 1px solid var(--tertiary-color);
-}
-
 .info-personal-fila {
 	gap: 2rem;
 }
@@ -238,6 +238,23 @@ section li {
 }
 /* #endregion */
 
+/* #region EXPERIENCIA */
+#experiencia .flex-row {
+	gap: 3rem;
+}
+
+#experiencia .column {
+	width: fit-content;
+	gap: 1rem 0;
+}
+
+iframe {
+	width: 480px;
+	height: 270px;
+	margin-bottom: 1rem;
+}
+/* #endregion */
+
 /* #region FOOTER */
 footer {
 	height: fit-content;
@@ -246,8 +263,8 @@ footer {
 }
 
 footer hr {
-	border-top: 1px solid var(--tertiary-color);
-	margin: 1rem 10rem;
+	border: 1px solid var(--tertiary-color);
+	margin: 1.5rem 10rem;
 }
 
 #redes-sociales {

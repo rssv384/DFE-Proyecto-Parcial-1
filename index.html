@@ -36,7 +36,7 @@
         <section id="home" class="flex-column flex-content-center flex-align-items-center">
             <h1>Raúl Soto</h1>
             <div class="flex-column flex-content-space-between flex-align-items-center text-align-center">
-                <img src="/img/profile_pic.jpg" alt="Foto de Perfil" title="Foto de Perfil">
+                <img src="img/profile_pic.jpg" alt="Foto de Perfil" title="Foto de Perfil">
                 <h2>Estudiante hermosillense de <b>Ing. en Sistemas de Información</b> enfocado en proyectos de
                     desarrollo en <b>Python</b> y un creciente interés en la <b>Ciencia de Datos</b> y el <b>Desarrollo
                         Web</b>.</h2>
@@ -126,18 +126,54 @@
 
         <section id="experiencia">
             <h2>EXPERIENCIA</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum harum sequi neque quos accusamus
-                magnam facere corporis? Ex alias, provident labore beatae optio impedit distinctio debitis veniam odit
-                consequuntur eligendi.</p>
+            <div class="flex-row flex-content-space-between">
+                <div class="column flex-column">
+                    <h3>Blog Personal</h3>
+                    <iframe src="https://drive.google.com/file/d/1f7EKaLBB46qMwWH-peN6oAjadnJ5LZ2S/preview" allow="autoplay"></iframe>
+                </div>
+
+                <div class="column flex-column flex-content-center">
+                    <p>Sitio web correspondiente a un blog personal. El usuario administrador puede publicar, editar y eliminar posts; mientras, los usuarios normales pueden ver los posts y, tras registrase e iniciar sesión, dejar comentarios en ellos.</p>
+                    <p><b>Tecnologías usadas:</b></p>
+                    <p>-<i>Python, HTML5, CSS, JavaScript, Flask, Bootstrap, SQLite.</i></p>
+                </div>
+            </div>
+            <hr>
+            <div class="flex-row flex-content-space-between">
+                <div class="column flex-column flex-content-center">
+                    <p>Sistema de compras en línea para la empresa ficticia I-NO Arcade. Se implementan las funcionalidades básicas de una tienda online: catálogo, registro de clientes, inicio de sesión y wishlist. El carrito de compras es solamente un <i>dummy</i> debido a que, si bien se pueden agregar y quitar productos a este, el proceso de compra no fue implementado.</p>
+                    <p><b>Tecnologías usadas:</b></p>
+                    <p>-<i>Python, HTML5, CSS, SASS, JavaScript, Flask, Bootstrap, PostgreSQL.</i></p>
+                </div>
+
+                <div class="column flex-column">
+                    <h3>I-NO Arcade - Tienda Online</h3>
+                    <iframe src="https://drive.google.com/file/d/1vrt1dlshDjdWYP7pnOs4otft30rz3CZJ/preview" allow="autoplay"></iframe>
+                </div>
+            </div>
+            <hr>
+            <div class="flex-row flex-content-space-between">
+                <div class="column flex-column">
+                    <h3>Sistema de Control de Inventarios - Papelería Ely</h3>
+                    <iframe src="https://drive.google.com/file/d/1S-a4ZVp-q4kKIFRf-XlBkh0-Pcs1to3b/preview" allow="autoplay"></iframe>
+                </div>
+                
+                <div class="column flex-column flex-content-center">
+                    <p>Sistema de control de inventarios para el negocio <i>Papelería Ely</i>, mediante el cual se pueden gestionar las entradas de productos, las ventas realizadas y los proveedores con los que cuentan.</p>
+                    <p>El usuario puede consultar las existencias en inventario, así como la información sobre entradas, ventas y proveedores, además de generar un reporte al respecto en un archivo de Excel.</p>
+                    <p><b>Tecnologías usadas:</b></p>
+                    <p>- <i>C#, MySQL</i></p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="flex-column flex-content-center align-items-center">
+    <footer class="flex-column flex-content-center">
         <div id="contacto" class="flex-column flex-content-center text-align-center">
             <h2>CONTACTO</h2>
             <p><b>Correo electrónico: </b>rssotovejar@gmail.com</p>
             <hr>
-            <div id="redes-sociales" class="flex-row flex-content-center align-items-center">
+            <div id="redes-sociales" class="flex-row flex-content-center flex-align-items-center">
                 <a href="https://github.com/rssv384" target="_blank"><i class="fa-brands fa-2xl fa-github"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-2xl fa-instagram"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-2xl fa-facebook"></i></a>
@@ -146,7 +182,7 @@
         </div>
     </footer>
 
-    <button id="btn-ir-arriba" >
+    <button id="btn-ir-arriba">
         <svg viewBox="0 0 24 24">
             <path d="m 4 16 l 8 -8 l 0 21 l 0 -21 l 8 8"></path>
         </svg>
