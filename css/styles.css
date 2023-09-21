@@ -246,6 +246,7 @@ section hr {
 #experiencia .column {
 	width: fit-content;
 	gap: 1rem 0;
+	margin: 1rem 0;
 }
 
 iframe {
@@ -314,5 +315,79 @@ footer hr {
 	stroke-width: 2px;
 	width: 25px;
 	fill: none;
+}
+/* #endregion */
+
+/* #region RESPONSIVE */
+@media screen and (max-width: 1024px) {
+	body {
+		font-size: 16px;
+	}
+
+	section {
+		padding: 30px 60px;
+	}
+
+	nav li {
+		padding: 1rem 1rem;
+		font-size: 1.5rem;
+	}
+
+	#home img {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+	body {
+		font-size: 14px;
+	}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		font-size: 1.25rem;
+	}
+
+	nav li {
+		padding: 0.5rem 0.5em;
+		font-size: 1.25rem;
+	}
+
+	section {
+		padding: 10px 40px;
+	}
+
+	.column {
+		width: 45%;
+	}
+
+	#home img {
+		width: 200px;
+	}
+
+	.sm-row-to-column {
+		flex-direction: column;
+	}
+
+	.sm-row-to-column-reverse {
+		flex-direction: column-reverse;
+	}
+
+	#experiencia .flex-row {
+		gap: 0;
+	}
+
+	#experiencia .column {
+		width: fit-content;
+		gap: 1rem 0;
+		margin: 0.5rem 0;
+	}
 }
 /* #endregion */
