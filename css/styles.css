@@ -192,8 +192,8 @@ section hr {
 }
 
 #home img {
-	width: 300px;
-	height: auto;
+	width: auto;
+	height: 300px;
 	margin-bottom: 1rem;
 	border-radius: 50%;
 }
@@ -334,7 +334,7 @@ footer hr {
 	}
 
 	#home img {
-		width: 250px;
+		height: 250px;
 	}
 }
 
@@ -369,7 +369,7 @@ footer hr {
 	}
 
 	#home img {
-		width: 200px;
+		height: 200px;
 	}
 
 	.sm-row-to-column {
